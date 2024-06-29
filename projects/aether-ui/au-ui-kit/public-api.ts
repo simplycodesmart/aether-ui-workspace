@@ -1,0 +1,1 @@
+export const AU_UI_KIT = "@aether-ui/au-ui-kit";

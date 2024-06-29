@@ -1,0 +1,240 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "FontClassCustom",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 48,\n    color: '#e61952',\n    icon: 'favorite',\n    className : 'custom-class'\n  },\n}"
+            },
+            {
+                "name": "FontIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 48,\n    color: 'accent',\n    icon: 'home',\n  },\n}"
+            },
+            {
+                "name": "FontIconPrimary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 48,\n    color: '#e61952',\n    icon: 'favorite',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<AuIcon>",
+                "defaultValue": "{\n  title: 'AetherUI/Au-icon',\n  component: AuIcon,\n  tags: ['autodocs'],\n  decorators: [\n    applicationConfig({\n      providers: [provideHttpClient()],\n    }),\n  ],\n}"
+            },
+            {
+                "name": "preview",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/aether-ui/au-ui-kit/.storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Preview",
+                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "SvgIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    icon: 'accessibility.svg',\n  },\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<AuIcon>",
+                "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts": [
+                {
+                    "name": "FontClassCustom",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 48,\n    color: '#e61952',\n    icon: 'favorite',\n    className : 'custom-class'\n  },\n}"
+                },
+                {
+                    "name": "FontIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 48,\n    color: 'accent',\n    icon: 'home',\n  },\n}"
+                },
+                {
+                    "name": "FontIconPrimary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 48,\n    color: '#e61952',\n    icon: 'favorite',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<AuIcon>",
+                    "defaultValue": "{\n  title: 'AetherUI/Au-icon',\n  component: AuIcon,\n  tags: ['autodocs'],\n  decorators: [\n    applicationConfig({\n      providers: [provideHttpClient()],\n    }),\n  ],\n}"
+                },
+                {
+                    "name": "SvgIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    icon: 'accessibility.svg',\n  },\n}"
+                }
+            ],
+            "projects/aether-ui/au-ui-kit/.storybook/preview.ts": [
+                {
+                    "name": "preview",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/aether-ui/au-ui-kit/.storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Preview",
+                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<AuIcon>",
+                    "file": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ]
+        }
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/aether-ui/au-ui-kit/.storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FontClassCustom",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FontIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FontIconPrimary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/aether-ui/au-ui-kit/stories/components/au-icon/au-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SvgIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

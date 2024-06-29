@@ -1,0 +1,84 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Run tests
+        run: npm run aether-ui-test
+        env:
+          CI: true
+
+      - name: Upload coverage report
+        run: |
+          npm run aether-ui-test -- --code-coverage
+          mkdir -p coverage
+          mv coverage/* coverage/lcov-report/
+          echo "[![Coverage](https://img.shields.io/badge/Coverage-$(grep -Po '(\d+.\d+%|\d+%)' coverage/lcov-report/index.html | tail -1)-brightgreen.svg)](./coverage/lcov-report/index.html)" > coverage/coverage-badge.md
+
+      - name: Update README with coverage badge
+        run: |
+          BADGE=$(cat coverage/coverage-badge.md)
+          sed -i "s|\[!\[Coverage\].*|\[![Coverage](https://img.shields.io/badge/Coverage-$(grep -Po '(\d+.\d+%|\d+%)' coverage/lcov-report/index.html | tail -1)-brightgreen.svg)](./coverage/lcov-report/index.html)|" README.md
+
+      - name: Commit updated README
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add README.md
+          git commit -m "Update coverage badge"
+          git push
+
+      - name: Build project
+        run: npm run aether-ui-build
+
+  deploy-storybook:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Storybook
+        run: npm run storybook-build
+
+      - name: Deploy Storybook to GitHub Pages
+        run: npm run storybook-deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

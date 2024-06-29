@@ -1,0 +1,9 @@
+@use "sass:map";
+@import "./../core/colors/all-color";
+@import "./../core/colors/color-schemes";
+
+@each $key, $val in $color-scheme {
+    .au-#{$key} {
+        color: map.get($val, 400);
+    }
+}

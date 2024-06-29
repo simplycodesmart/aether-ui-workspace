@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../dist/aether-ui/au-ui-kit",
+  "lib": {
+    "entryFile": "public-api.ts"
+  },
+  "assets": [
+    "./assets/**"
+  ]
+}
